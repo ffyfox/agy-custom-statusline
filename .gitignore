@@ -1,0 +1,19 @@
+# OS & editor files
+.DS_Store
+Thumbs.db
+.directory
+.vscode/
+.idea/
+
+# Runtime, logs & temporary files
+*.log
+*.tmp
+*.bak
+node_modules/
+coverage/
+
+# Local secrets & credentials
+.env
+.env.*
+*.pem
+.credentials.yaml

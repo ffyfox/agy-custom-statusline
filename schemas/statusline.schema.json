@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Custom Status Line Configuration",
+  "description": "Configuration schema for the custom-statusline CLI status line renderer.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema location for editor autocomplete and validation."
+    },
+    "version": {
+      "type": "integer",
+      "const": 1,
+      "default": 1,
+      "description": "Configuration format version."
+    },
+    "locale": {
+      "type": "string",
+      "enum": ["auto", "en", "zh"],
+      "default": "auto",
+      "description": "Language for CLI diagnostics and interactive TUI ('auto', 'en', or 'zh')."
+    },
+    "statusLocale": {
+      "type": "string",
+      "enum": ["en", "zh", "auto"],
+      "default": "en",
+      "description": "Language for rendered status line labels ('en', 'zh', or 'auto')."
+    },
+    "colorScheme": {
+      "type": "string",
+      "enum": [
+        "auto",
+        "none",
+        "light",
+        "solarized light",
+        "colorblind-friendly light",
+        "dark",
+        "solarized dark",
+        "colorblind-friendly dark",
+        "tokyo night",
+        "terminal"
+      ],
+      "default": "auto",
+      "description": "Color palette for status line segments ('auto' follows CLI settings.json)."
+    },
+    "separator": {
+      "type": "string",
+      "default": " · ",
+      "description": "Separator inserted between right-side widgets."
+    },
+    "leftSeparator": {
+      "type": "string",
+      "default": " · ",
+      "description": "Separator inserted between left-side widgets (vim always joins with a space)."
+    },
+    "left": {
+      "type": "array",
+      "default": ["vim", "shortcuts"],
+      "description": "Ordered list of widget IDs displayed on the left side.",
+      "items": { "$ref": "#/$defs/widgetId" }
+    },
+    "right": {
+      "type": "array",
+      "default": ["tasks", "subagents", "mode", "model"],
+      "description": "Ordered list of widget IDs displayed on the right side.",
+      "items": { "$ref": "#/$defs/widgetId" }
+    },
+    "widgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vim": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true }
+          }
+        },
+        "shortcuts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "text": { "type": "string", "default": "? for shortcuts" }
+          }
+        },
+        "tasks": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "showCommandHint": { "type": "boolean", "default": true }
+          }
+        },
+        "subagents": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "includeCompleted": { "type": "boolean", "default": false }
+          }
+        },
+        "mode": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "uppercase": { "type": "boolean", "default": false }
+          }
+        },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "orchestratorStyle": {
+              "type": "string",
+              "enum": ["official", "both", "model_only"],
+              "default": "official"
+            },
+            "showEffort": { "type": "boolean", "default": true }
+          }
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "format": {
+              "type": "string",
+              "enum": ["percent", "bar", "bar_percent", "tokens"],
+              "default": "percent"
+            },
+            "prefix": { "type": "string", "default": "ctx " },
+            "barWidth": { "type": "integer", "minimum": 3, "maximum": 32, "default": 8 },
+            "showWhenZero": { "type": "boolean", "default": true },
+            "warnAtPercent": { "type": "number", "minimum": 0, "maximum": 100, "default": 60 },
+            "criticalAtPercent": { "type": "number", "minimum": 0, "maximum": 100, "default": 85 }
+          }
+        },
+        "context_extra": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "showCacheRate": { "type": "boolean", "default": true },
+            "showCacheTokens": { "type": "boolean", "default": false },
+            "showExceeds200k": { "type": "boolean", "default": true },
+            "cachePrefix": { "type": "string", "default": "cache " },
+            "exceeds200kText": { "type": "string", "default": ">200k" },
+            "showPlaceholder": { "type": "boolean", "default": true }
+          }
+        },
+        "quota": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "bucket": {
+              "type": "string",
+              "enum": [
+                "gemini-5h",
+                "gemini-weekly",
+                "3p-5h",
+                "3p-weekly",
+                "gemini-5h+weekly",
+                "3p-5h+weekly"
+              ],
+              "default": "gemini-5h"
+            },
+            "format": {
+              "type": "string",
+              "enum": ["percent", "bar", "bar_percent"],
+              "default": "percent"
+            },
+            "metric": {
+              "type": "string",
+              "enum": ["remaining", "used"],
+              "default": "remaining"
+            },
+            "prefix": { "type": "string", "default": "quota " },
+            "barWidth": { "type": "integer", "minimum": 3, "maximum": 32, "default": 6 },
+            "showReset": {
+              "type": "string",
+              "enum": ["none", "5h", "weekly", "both"],
+              "default": "none"
+            },
+            "warnBelowPercent": { "type": "number", "minimum": 0, "maximum": 100, "default": 30 },
+            "criticalBelowPercent": { "type": "number", "minimum": 0, "maximum": 100, "default": 10 }
+          }
+        },
+        "git": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "showDirty": { "type": "boolean", "default": true },
+            "maxLength": { "type": "integer", "minimum": 5, "maximum": 80, "default": 28 }
+          }
+        },
+        "cwd": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "style": {
+              "type": "string",
+              "enum": ["basename", "short"],
+              "default": "basename"
+            }
+          }
+        },
+        "state": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "hideWhenIdle": { "type": "boolean", "default": true }
+          }
+        },
+        "artifacts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true }
+          }
+        },
+        "queued": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true }
+          }
+        },
+        "sandbox": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "onlyWhenEnabled": { "type": "boolean", "default": true }
+          }
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "decimals": { "type": "integer", "minimum": 0, "maximum": 6, "default": 2 }
+          }
+        },
+        "title": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "maxLength": { "type": "integer", "minimum": 4, "maximum": 80, "default": 24 },
+            "prefix": { "type": "string", "default": "" }
+          }
+        },
+        "confirm": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "text": { "type": "string", "default": "confirm!" }
+          }
+        },
+        "conversation_id": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "length": { "type": "integer", "minimum": 0, "maximum": 36, "default": 8 },
+            "prefix": { "type": "string", "default": "" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "widgetId": {
+      "type": "string",
+      "enum": [
+        "vim",
+        "shortcuts",
+        "tasks",
+        "subagents",
+        "mode",
+        "model",
+        "context",
+        "context_extra",
+        "quota",
+        "git",
+        "cwd",
+        "state",
+        "artifacts",
+        "queued",
+        "sandbox",
+        "cost",
+        "title",
+        "confirm",
+        "conversation_id"
+      ]
+    }
+  }
+}

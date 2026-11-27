@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          - 18
+          - 20
+          - 22
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Syntax check JavaScript files
+        run: |
+          for f in scripts/*.js test/*.js; do
+            node --check "$f"
+          done
+
+      - name: Validate JSON files and script permissions
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('plugin.json', 'utf8')); JSON.parse(require('fs').readFileSync('schemas/statusline.schema.json', 'utf8'));"
+          for f in scripts/statusline-renderer.js scripts/manage-statusline.js scripts/statusline-tui.js test/verify.js; do
+            test -x "$f" || { echo "Missing executable bit on $f"; exit 1; }
+          done
+
+      - name: Check repository hygiene
+        run: |
+          if grep -rnE "(/home/|/Users/)" README.md README.zh-CN.md CHANGELOG.md plugin.json schemas/ scripts/ skills/ test/; then
+            echo "Found machine-specific absolute path in repository files"
+            exit 1
+          fi
+
+      - name: Run portable verification suite
+        run: node test/verify.js

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "custom-statusline",
+  "displayName": "Custom Status Line",
+  "version": "0.1.0",
+  "description": "Configurable TUI status line with 19 widgets, 8 official palettes, presets, bilingual interactive TUI configurator, and guided setup.",
+  "author": {
+    "name": "ffyfox",
+    "url": "https://github.com/ffyfox"
+  },
+  "homepage": "https://github.com/ffyfox/agy-custom-statusline#readme",
+  "repository": "https://github.com/ffyfox/agy-custom-statusline",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "statusline",
+    "cli",
+    "tui",
+    "widgets",
+    "quota",
+    "context",
+    "git"
+  ],
+  "suggestedPrompts": [
+    "Guide me through customizing my CLI status line",
+    "Show available status line presets and preview them",
+    "Check my status line setup and diagnose any issues"
+  ]
+}
