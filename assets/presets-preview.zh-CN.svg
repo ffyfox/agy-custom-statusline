@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 504" width="1220" height="504">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 12.5px; }
+      .label { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 12.5px; }
+      .title { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 12.5px; font-weight: 600; }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1218" height="502" rx="12" fill="#1a1b26" stroke="#2f3549" stroke-width="1.5"/>
+  <path d="M 1 13 Q 1 1 13 1 L 1207 1 Q 1219 1 1219 13 L 1219 40 L 1 40 Z" fill="#16161e"/>
+  <line x1="1" y1="40" x2="1219" y2="40" stroke="#292e42" stroke-width="1"/>
+  <circle cx="22" cy="20" r="5.5" fill="#f7768e"/>
+  <circle cx="40" cy="20" r="5.5" fill="#e0af68"/>
+  <circle cx="58" cy="20" r="5.5" fill="#9ece6a"/>
+  <text class="title" x="610" y="24" text-anchor="middle" fill="#787c99">custom-statusline — 5 套内置预设与告警状态真彩预览 (Tokyo Night)</text>
+  <text class="label" x="22" y="70" fill="#7aa2f7" font-weight="700">official</text>
+  <text class="label" x="98" y="70" fill="#787c99">— 1:1 官方原版</text>
+  <rect x="1122" y="57" width="76" height="17" rx="4" fill="#24283b" stroke="#7aa2f7" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="69.5" text-anchor="middle" fill="#7aa2f7" font-size="10.5" font-weight="700">DEFAULT</text>
+  <rect x="20" y="78" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="99.5" text-anchor="start"><tspan fill="rgb(120,124,153)" xml:space="preserve">? 快捷键</tspan></text>
+  <text class="mono" x="1186" y="99.5" text-anchor="end"><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="label" x="22" y="142" fill="#7aa2f7" font-weight="700">minimal</text>
+  <text class="label" x="90" y="142" fill="#787c99">— 80 列窄屏极简</text>
+  <rect x="1122" y="129" width="76" height="17" rx="4" fill="#24283b" stroke="#7dcfff" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="141.5" text-anchor="middle" fill="#7dcfff" font-size="10.5" font-weight="700">COMPACT</text>
+  <rect x="20" y="150" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="171.5" text-anchor="start"><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1186" y="171.5" text-anchor="end"><tspan fill="rgb(126,134,173)" xml:space="preserve">上下文 14%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="label" x="22" y="214" fill="#7aa2f7" font-weight="700">balanced</text>
+  <text class="label" x="98" y="214" fill="#787c99">— 通用均衡主力</text>
+  <rect x="1122" y="201" width="76" height="17" rx="4" fill="#24283b" stroke="#9ece6a" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="213.5" text-anchor="middle" fill="#9ece6a" font-size="10.5" font-weight="700">POPULAR</text>
+  <rect x="20" y="222" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="243.5" text-anchor="start"><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1186" y="243.5" text-anchor="end"><tspan fill="rgb(126,134,173)" xml:space="preserve">上下文 14%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">配额 82%|64%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="label" x="22" y="286" fill="#7aa2f7" font-weight="700">hud</text>
+  <text class="label" x="58" y="286" fill="#787c99">— 双进度条仪表盘</text>
+  <rect x="1122" y="273" width="76" height="17" rx="4" fill="#24283b" stroke="#bb9af7" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="285.5" text-anchor="middle" fill="#bb9af7" font-size="10.5" font-weight="700">VISUAL</text>
+  <rect x="20" y="294" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="315.5" text-anchor="start"><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1186" y="315.5" text-anchor="end"><tspan fill="rgb(126,134,173)" xml:space="preserve">上下文 █░░░░░ 14%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">配额 ████░ 82% | ███░░ 64%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="label" x="22" y="358" fill="#7aa2f7" font-weight="700">developer</text>
+  <text class="label" x="106" y="358" fill="#787c99">— 高密度工程监控</text>
+  <rect x="1122" y="345" width="76" height="17" rx="4" fill="#24283b" stroke="#7aa2f7" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="357.5" text-anchor="middle" fill="#7aa2f7" font-size="10.5" font-weight="700">PRO</text>
+  <rect x="20" y="366" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="387.5" text-anchor="start"><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1186" y="387.5" text-anchor="end"><tspan fill="rgb(126,134,173)" xml:space="preserve">上下文 14% (149k/1.0M)</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">缓存 96%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">配额 82%|64%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="label" x="22" y="430" fill="#7aa2f7" font-weight="700">balanced · alert</text>
+  <text class="label" x="162" y="430" fill="#787c99">— 告警与高负载态示例</text>
+  <rect x="1122" y="417" width="76" height="17" rx="4" fill="#24283b" stroke="#ff9e64" stroke-opacity="0.45" stroke-width="1"/>
+  <text class="label" x="1160" y="429.5" text-anchor="middle" fill="#ff9e64" font-size="10.5" font-weight="700">高危提醒</text>
+  <rect x="20" y="438" width="1180" height="34" rx="7" fill="#16161e" stroke="#292e42" stroke-width="1"/>
+  <text class="mono" x="34" y="459.5" text-anchor="start"><tspan fill="rgb(158,206,106)" font-weight="700" xml:space="preserve">-- 插入 --</tspan><tspan fill="#c0caf5" xml:space="preserve"> </tspan><tspan fill="rgb(255,158,100)" font-weight="700" xml:space="preserve">待确认!</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">2 排队</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1186" y="459.5" text-anchor="end"><tspan fill="rgb(247,118,142)" xml:space="preserve">上下文 88%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">配额 </tspan><tspan fill="rgb(247,118,142)" xml:space="preserve">8%</tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">|</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">24%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">2 任务 · /tasks</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">1 子代理</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">自动</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+</svg>
