@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 610" width="1040" height="610">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 13px; }
+      .small { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 12px; }
+      .footer { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 10.8px; }
+      .title { font-family: 'JetBrains Mono', 'JetBrainsMono Nerd Font Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Source Han Sans HW SC', 'Source Han Sans SC', 'Noto Sans Mono CJK SC', 'Noto Sans CJK SC', 'Microsoft YaHei', monospace; font-size: 12.5px; font-weight: 600; }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1038" height="608" rx="12" fill="#1a1b26" stroke="#2f3549" stroke-width="1.5"/>
+  <path d="M 1 13 Q 1 1 13 1 L 1027 1 Q 1039 1 1039 13 L 1039 40 L 1 40 Z" fill="#16161e"/>
+  <line x1="1" y1="40" x2="1039" y2="40" stroke="#292e42" stroke-width="1"/>
+  <circle cx="22" cy="20" r="5.5" fill="#f7768e"/>
+  <circle cx="40" cy="20" r="5.5" fill="#e0af68"/>
+  <circle cx="58" cy="20" r="5.5" fill="#9ece6a"/>
+  <text class="title" x="520" y="24" text-anchor="middle" fill="#787c99">custom-statusline --ui — Interactive Terminal Configurator</text>
+  <text class="mono" x="22" y="66" font-weight="700" fill="#c0caf5">Custom Status Line Configurator <tspan fill="#7dcfff">[EN]</tspan>  <tspan fill="#9ece6a" font-weight="400">Auto-saved · agy reloads within 300ms</tspan></text>
+  <rect x="20" y="82" width="1000" height="74" rx="7" fill="#16161e" stroke="#3b4261" stroke-width="1"/>
+  <rect x="34" y="74" width="106" height="16" fill="#1a1b26"/>
+  <text class="small" x="87" y="86" text-anchor="middle" fill="#7aa2f7" font-weight="700">LIVE PREVIEW</text>
+  <text class="mono" x="36" y="112" text-anchor="start"><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="mono" x="1004" y="112" text-anchor="end"><tspan fill="rgb(126,134,173)" xml:space="preserve">ctx 14%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">quota 82%|64%</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">auto</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="small" x="36" y="138" fill="#787c99">Theme: tokyo night   |   Status Lang: en   |   Scenario: Normal (width 120)</text>
+  <rect x="20" y="174" width="1000" height="392" rx="7" fill="#16161e" stroke="#3b4261" stroke-width="1"/>
+  <rect x="34" y="166" width="190" height="16" fill="#1a1b26"/>
+  <text class="small" x="129" y="178" text-anchor="middle" fill="#7aa2f7" font-weight="700">LEFT SIDE / RIGHT SIDE</text>
+  <text class="small" x="36" y="198" fill="#7aa2f7" font-weight="700">── LEFT SIDE ──</text>
+  <text class="mono" x="36" y="217.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="217.5" fill="#9ece6a">[L]</text>
+  <text class="mono" x="92" y="217.5" fill="#c0caf5" font-weight="400">vim</text>
+  <text class="mono" x="240" y="217.5"><tspan fill="rgb(158,206,106)" font-weight="700" xml:space="preserve">-- INSERT --</tspan></text>
+  <text class="small" x="620" y="217.5" fill="#787c99">Vim Mode</text>
+  <text class="mono" x="36" y="237" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="237" fill="#9ece6a">[L]</text>
+  <text class="mono" x="92" y="237" fill="#c0caf5" font-weight="400">confirm</text>
+  <text class="mono" x="240" y="237"><tspan fill="rgb(255,158,100)" font-weight="700" xml:space="preserve">confirm!</tspan></text>
+  <text class="small" x="620" y="237" fill="#787c99">Confirmation Alert</text>
+  <text class="mono" x="36" y="256.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="256.5" fill="#9ece6a">[L]</text>
+  <text class="mono" x="92" y="256.5" fill="#c0caf5" font-weight="400">queued</text>
+  <text class="mono" x="240" y="256.5"><tspan fill="rgb(255,158,100)" xml:space="preserve">2 queued</tspan></text>
+  <text class="small" x="620" y="256.5" fill="#787c99">Queued Messages</text>
+  <text class="mono" x="36" y="276" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="276" fill="#9ece6a">[L]</text>
+  <text class="mono" x="92" y="276" fill="#c0caf5" font-weight="400">cwd</text>
+  <text class="mono" x="240" y="276"><tspan fill="rgb(126,134,173)" xml:space="preserve">my-app</tspan></text>
+  <text class="small" x="620" y="276" fill="#787c99">Working Directory</text>
+  <text class="mono" x="36" y="295.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="295.5" fill="#9ece6a">[L]</text>
+  <text class="mono" x="92" y="295.5" fill="#c0caf5" font-weight="400">git</text>
+  <text class="mono" x="240" y="295.5"><tspan fill="rgb(122,162,247)" xml:space="preserve">main</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">*</tspan></text>
+  <text class="small" x="620" y="295.5" fill="#787c99">Git Branch</text>
+  <text class="small" x="36" y="315" fill="#7aa2f7" font-weight="700">── RIGHT SIDE ──</text>
+  <text class="mono" x="36" y="334.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="334.5" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="334.5" fill="#c0caf5" font-weight="400">context</text>
+  <text class="mono" x="240" y="334.5"><tspan fill="rgb(247,118,142)" xml:space="preserve">ctx 88%</tspan></text>
+  <text class="small" x="620" y="334.5" fill="#787c99">Context Window</text>
+  <rect x="28" y="340" width="984" height="19" rx="4" fill="#24283b"/>
+  <text class="mono" x="36" y="354" fill="#7dcfff" font-weight="700">▸</text>
+  <text class="mono" x="54" y="354" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="354" fill="#e8eaed" font-weight="700">quota</text>
+  <text class="mono" x="240" y="354"><tspan fill="rgb(126,134,173)" xml:space="preserve">quota </tspan><tspan fill="rgb(247,118,142)" xml:space="preserve">8%</tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">|</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">24%</tspan></text>
+  <text class="small" x="620" y="354" fill="#787c99">Rate Limit Quota</text>
+  <text class="mono" x="36" y="373.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="373.5" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="373.5" fill="#c0caf5" font-weight="400">tasks</text>
+  <text class="mono" x="240" y="373.5"><tspan fill="rgb(126,134,173)" xml:space="preserve">2 task(s) · /tasks</tspan></text>
+  <text class="small" x="620" y="373.5" fill="#787c99">Background Tasks</text>
+  <text class="mono" x="36" y="393" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="393" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="393" fill="#c0caf5" font-weight="400">subagents</text>
+  <text class="mono" x="240" y="393"><tspan fill="rgb(126,134,173)" xml:space="preserve">1 subagent(s)</tspan></text>
+  <text class="small" x="620" y="393" fill="#787c99">Subagents</text>
+  <text class="mono" x="36" y="412.5" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="412.5" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="412.5" fill="#c0caf5" font-weight="400">mode</text>
+  <text class="mono" x="240" y="412.5"><tspan fill="rgb(255,158,100)" xml:space="preserve">auto</tspan></text>
+  <text class="small" x="620" y="412.5" fill="#787c99">Execution Mode</text>
+  <text class="mono" x="36" y="432" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="432" fill="#bb9af7">[R]</text>
+  <text class="mono" x="92" y="432" fill="#c0caf5" font-weight="400">model</text>
+  <text class="mono" x="240" y="432"><tspan fill="rgb(126,134,173)" xml:space="preserve">Orchestrator</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">Gemini 4 Neon</tspan><tspan fill="rgb(120,124,153)" xml:space="preserve"> · </tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">high</tspan></text>
+  <text class="small" x="620" y="432" fill="#787c99">Model &amp; Effort</text>
+  <text class="small" x="36" y="451.5" fill="#7aa2f7" font-weight="700">── AVAILABLE (OFF) ──</text>
+  <text class="mono" x="36" y="471" fill="#7dcfff" font-weight="700"> </text>
+  <text class="mono" x="54" y="471" fill="#787c99">[ ]</text>
+  <text class="mono" x="92" y="471" fill="#c0caf5" font-weight="400">shortcuts</text>
+  <text class="mono" x="240" y="471"><tspan fill="rgb(120,124,153)" xml:space="preserve">? for shortcuts</tspan></text>
+  <text class="small" x="620" y="471" fill="#787c99">Shortcuts Hint</text>
+  <line x1="20" y1="492" x2="1020" y2="492" stroke="#3b4261" stroke-width="1"/>
+  <rect x="34" y="484" width="254" height="16" fill="#16161e"/>
+  <text class="small" x="161" y="496" text-anchor="middle" fill="#7dcfff" font-weight="700">SELECTED: quota (Rate Limit Quota)</text>
+  <text class="small" x="36" y="520" fill="#9aa5ce">Shows single or paired (5h|weekly) quota as percent, bar, or bar+percent with warning thresholds.</text>
+  <text class="mono" x="36" y="544" fill="#787c99">Sample: <tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">quota </tspan><tspan fill="rgb(247,118,142)" xml:space="preserve">8%</tspan><tspan fill="rgb(126,134,173)" xml:space="preserve">|</tspan><tspan fill="rgb(255,158,100)" xml:space="preserve">24%</tspan></tspan></text>
+  <text class="footer" x="24" y="592" fill="#787c99">↑↓ Move · Space On/Off · ←→ Side · [/] Order · Enter Options · P Presets · T Theme · L Status Lang · V View · G 中文 · U Undo · Q Quit</text>
+</svg>
